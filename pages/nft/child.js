@@ -6,7 +6,7 @@ export default function Child({ name, currency_image, currency, amount, nft_imag
 
     return (
         <div>
-            <a target="_blank" href={opensea_url}>
+            <a target="_blank" rel="noreferrer" href={opensea_url}>
                 <img loading="lazy" className="object-center rounded-xl object-cover mb-5 w-full md:w-60 h-60" src={nft_image ? nft_image : defaultImage} />
             </a>
 
