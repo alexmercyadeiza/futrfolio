@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Epilogue']
+      sans: ['Epilogue'],
+      'mono': ['"Press Start 2P"'],
+      'mono-two': ['VT323']
     },
   },
   plugins: [require('daisyui'), require('@tailwindcss/forms')],

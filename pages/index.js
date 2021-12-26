@@ -1,32 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Nfts from './components/Nfts';
-import Welcome from './components/Welcome'
-
+import HomeLayout from '../components/HomeLayout';
+import Nfts from './nft/index';
 
 export default function Home({ nfts }) {
   return (
-    <div>
-      <Head>
-        <title>FutrFolio</title>
-      </Head>
-      <div className="bg-white min-h-screen">
-        <div className="max-w-6xl mx-auto mt-10 mb-20">
-
-          <Welcome />
-
-          <div className="grid grid-cols-5 gap-8">
-            {nfts.orders.map(nft =>
-              <Nfts key={nft.asset.id} nft_image={nft.asset.image_url} name={nft.asset.asset_contract.name} currency={nft.payment_token_contract.symbol} currency_image={nft.payment_token_contract.image_url} amount={nft.base_price} />
-            )}
-          </div>
-
-        </div>
-      </div>
-    </div>
+    <HomeLayout>
+      <Nfts nfts={nfts} />
+    </HomeLayout>
   )
 }
 
+//why must i send in the data here na!
 
 const options = {
   method: 'GET',
