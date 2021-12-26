@@ -38,5 +38,7 @@ export async function getStaticProps() {
         props: {
             cryptos,
         },
+
+        revalidate: 10,
     }
 }

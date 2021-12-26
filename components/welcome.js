@@ -25,9 +25,9 @@ const WelcomeUser = () => {
       </div>
 
       <div className="btn-group">
-        <ActiveLink href="/" className="btn btn-sm md:font-mono font-sans text-xs">nfts</ActiveLink>
-        <ActiveLink href="/crypto" className="btn btn-sm md:font-mono font-sans text-xs">crypto</ActiveLink>
-        <ActiveLink href="/stocks" className="btn btn-sm md:font-mono font-sans text-xs">stocks</ActiveLink>
+        <ActiveLink href="/" className="btn md:font-mono font-sans text-xs">nfts</ActiveLink>
+        <ActiveLink href="/crypto" className="btn md:font-mono font-sans text-xs">crypto</ActiveLink>
+        <ActiveLink href="/stocks" className="btn md:font-mono font-sans text-xs">stocks</ActiveLink>
       </div>
     </div>
   );

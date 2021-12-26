@@ -25,5 +25,7 @@ export async function getStaticProps() {
     props: {
       nfts,
     },
+
+    revalidate: 10,
   }
 }
