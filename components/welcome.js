@@ -7,9 +7,9 @@ const ActiveLink = ({ children, href, className }) => {
     <Link href={href} scroll={false}>
       <button
         className={`${router.pathname === href
-          ? ""
-          : "btn-outline"
-          } ${className} btn btn-sm font-mono text-xs`}
+          ? "bg-white text-black border-white"
+          : "btn-outline border-white text-white"
+          } ${className} btn btn-sm font-mono text-xs hover:bg-white hover:text-black  `}
       >
         {children}
       </button>
@@ -19,9 +19,9 @@ const ActiveLink = ({ children, href, className }) => {
 
 const WelcomeUser = () => {
   return (
-    <div className="border w-full rounded-xl py-4 px-6 md:flex md:items-center md:justify-between space-y-4 md:space-y-0">
+    <div className="bg-black text-white w-full rounded-xl py-4 px-6 md:flex md:items-center md:justify-between space-y-4 md:space-y-0">
       <div className="text-sm font-semibold">
-        &#128075; Hello, <a href="" className="underline text-blue-700">create an account</a> to get started.
+        &#128075; Hello, <a href="" className="underline">create an account</a> to get started.
       </div>
 
       <div className="btn-group">
