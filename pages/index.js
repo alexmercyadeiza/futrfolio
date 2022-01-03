@@ -1,3 +1,4 @@
+import Pagination from '../components/common/pagination';
 import HomeLayout from '../components/HomeLayout';
 import Nfts from './nft/index';
 
@@ -5,6 +6,7 @@ export default function Home({ nfts }) {
   return (
     <HomeLayout>
       <Nfts nfts={nfts} />
+      <Pagination />
     </HomeLayout>
   )
 }
